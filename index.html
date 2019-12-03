@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/counter.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-title">
+      <h2>Vehicle Counter System</h2>
+      <div class="showmenav">
+        <ul>
+          <li><a href="#" onclick="additem('.remove1')">Add car</a></li>
+          <li><a href="#" onclick="additem('.remove2')">Add Motorcycle</a></li>
+          <li><a href="#" onclick="additem('.remove3')">Add bike</a></li>
+          <li><a href="#" onclick="additem('.remove4')">Add Truck</a></li>
+          <li><a href="#" onclick="additem('.remove5')">Add Bus</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- This is where the main body of the element starts -->
+    <div class="container">
+      <!-- this is the card display for each element -->
+      <div class="vehicle1 remove1" id="v1">
+        <div class="image-about">
+          <div class="imagehere">
+            <img onclick="addit('display1')" src="./images/car1.png" alt="" />
+          </div>
+          <div class="about">
+            <h2>CAR</h2>
+            <textarea class="textfield">Description goes in here</textarea>
+            <!-- <p>
+              This is for the car section and all the details are displayed here
+            </p> -->
+          </div>
+        </div>
+        <div class="buttons-display">
+          <div class="buttons">
+            <button onclick="addit('display1')">
+              <img src="./images/add.png" alt="" />
+            </button>
+            <button onclick="substr('display1')">
+              <img src="./images/minus.png" alt="" />
+            </button>
+            <button onclick="removeVehicle('.remove1','display1')">
+              <img src="./images/cancel.png" alt="" />
+            </button>
+          </div>
+          <div class="displayhere">
+            <input type="number" id="display1" value="2" readonly />
+          </div>
+        </div>
+      </div>
+      <!-- This is where the vehicle ends -->
+      <!-- this is the card display for each element -->
+      <div class="vehicle1 remove2" id="v2">
+        <div class="image-about">
+          <div class="imagehere">
+            <img onclick="addit('display2')" src="./images/motorbike1.png" alt="" />
+          </div>
+          <div class="about">
+            <h2>Motorbike</h2>
+            <textarea class="textfield">Description goes in here</textarea>
+            <!-- <p>
+              This is for the Motorbike section and all the details are
+              displayed here
+            </p> -->
+          </div>
+        </div>
+        <div class="buttons-display">
+          <div class="buttons">
+            <button onclick="addit('display2')">
+              <img src="./images/add.png" alt="" />
+            </button>
+            <button onclick="substr('display2')">
+              <img src="./images/minus.png" alt="" />
+            </button>
+            <button onclick="removeVehicle('.remove2','display2')">
+              <img src="./images/cancel.png" alt="" />
+            </button>
+          </div>
+          <div class="displayhere">
+            <input type="number" id="display2" value="2" readonly />
+          </div>
+        </div>
+      </div>
+      <!-- This is where the vehicle ends -->
+      <!-- this is the card display for each element -->
+      <div class="vehicle1 remove3" id="v3">
+        <div class="image-about">
+          <div class="imagehere">
+            <img onclick="addit('display3')" src="./images/bike1.png" alt="" />
+          </div>
+          <div class="about">
+            <h2>Bike</h2>
+            <textarea class="textfield">Description goes in here</textarea>
+          </div>
+        </div>
+        <div class="buttons-display">
+          <div class="buttons">
+            <button onclick="addit('display3')">
+              <img src="./images/add.png" alt="" />
+            </button>
+            <button onclick="substr('display3')">
+              <img src="./images/minus.png" alt="" />
+            </button>
+            <button onclick="removeVehicle('.remove3','display3')">
+              <img src="./images/cancel.png" alt="" />
+            </button>
+          </div>
+          <div class="displayhere">
+            <input type="number" id="display3" value="2" readonly />
+          </div>
+        </div>
+      </div>
+      <!-- This is where the vehicle ends -->
+      <!-- this is the card display for each element -->
+      <div class="vehicle1 remove4" id="v4">
+        <div class="image-about">
+          <div class="imagehere">
+            <img onclick="addit('display4')" src="./images/truck.png" alt="" />
+          </div>
+          <div class="about">
+            <h2>Truck</h2>
+            <textarea class="textfield">Description goes in here</textarea>
+          </div>
+        </div>
+        <div class="buttons-display">
+          <div class="buttons">
+            <button onclick="addit('display4')">
+              <img src="./images/add.png" alt="" />
+            </button>
+            <button onclick="substr('display4')">
+              <img src="./images/minus.png" alt="" />
+            </button>
+            <button onclick="removeVehicle('.remove4','display4')">
+              <img src="./images/cancel.png" alt="" />
+            </button>
+          </div>
+          <div class="displayhere">
+            <input type="number" id="display4" value="2" readonly />
+          </div>
+        </div>
+      </div>
+      <!-- This is where the vehicle ends -->
+      <!-- this is the card display for each element -->
+      <div class="vehicle1 remove5" id="v5">
+        <div class="image-about">
+          <div class="imagehere">
+            <img onclick="addit('display5')" src="./images/bus.png" alt="" />
+          </div>
+          <div class="about">
+            <h2>Bus</h2>
+            <textarea class="textfield">Description goes in here</textarea>
+          </div>
+        </div>
+        <div class="buttons-display">
+          <div class="buttons">
+            <button onclick="addit('display5')">
+              <img src="./images/add.png" alt="" />
+            </button>
+            <button onclick="substr('display5')">
+              <img src="./images/minus.png" alt="" />
+            </button>
+            <button onclick="removeVehicle('.remove5','display5')">
+              <img src="./images/cancel.png" alt="" />
+            </button>
+          </div>
+          <div class="displayhere">
+            <input type="number" id="display5" value="2" readonly />
+          </div>
+        </div>
+      </div>
+      <!-- This is where the vehicle ends -->
+    </div>
+    <!-- This is where the container ends -->
+
+    <div class="footernav">
+      <span
+        ><button class="displaytotal" onclick="showresult()">
+          Show Total No of Vehicles</button
+        ><button class="displaytotal" id="disptotal"></button
+      ></span>
+      <!-- <ul>
+        <li><a href="#v1">Car</a></li>
+        <li><a href="#v2">Motorcycle</a></li>
+        <li><a href="#v3">Bicycle</a></li>
+        <li><a href="#v4">Bicycle</a></li>
+        <li><a href="#v5">Bicycle</a></li>
+      </ul> -->
+    </div>
+
+    <script src="./js/counter.js"></script>
+  </body>
+</html>
